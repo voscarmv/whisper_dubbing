@@ -1,0 +1,87 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/home/oscar/git/whisper.cpp/models/ggml-small.bin",
+		"language": "es",
+		"translate": false
+	},
+	"result": {
+		"language": "es"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " Hola. ¿Cómo estás hoy?"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,000",
+				"to": "00:00:07,000"
+			},
+			"offsets": {
+				"from": 2000,
+				"to": 7000
+			},
+			"text": " Quería contarte algo interesante que me pasó esta mañana."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:07,000",
+				"to": "00:00:14,000"
+			},
+			"offsets": {
+				"from": 7000,
+				"to": 14000
+			},
+			"text": " Iba caminando al trabajo cuando de repente empezó a llover muy fuerte."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:14,000",
+				"to": "00:00:21,000"
+			},
+			"offsets": {
+				"from": 14000,
+				"to": 21000
+			},
+			"text": " Así que me refugie bajo un árbol, esperando que pasara la tormenta."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:21,000",
+				"to": "00:00:26,000"
+			},
+			"offsets": {
+				"from": 21000,
+				"to": 26000
+			},
+			"text": " Y justo entonces recordé que había dejado la ventana abierta."
+		}
+	]
+}
