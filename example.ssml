@@ -8,15 +8,13 @@
   </prosody>
   <break time="3s">
   
-  <prosody rate="fast">
+  <prosody rate="x-fast">
     Iba caminando al trabajo cuando, de repente, empezó a llover muy fuerte.
   </prosody>
-  <break time="1s">
   
-  <prosody rate="slow">
+  <prosody rate="x-fast">
     Así que me refugié bajo un árbol, esperando que pasara la tormenta.
   </prosody>
-  <break time="2s">
   
   <prosody rate="x-fast">
     ¡Y justo entonces recordé que había dejado la ventana abierta!

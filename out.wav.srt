@@ -1,4 +1,20 @@
 1
-00:00:00,000 --> 00:00:05,000
- Esta es una prueba de vos para verificar que el sistema funciona correctamente.
+00:00:00,000 --> 00:00:02,000
+ Hola. ¿Cómo estás hoy?
+
+2
+00:00:02,000 --> 00:00:06,500
+ Quería contarte algo interesante que me pasó esta mañana.
+
+3
+00:00:06,500 --> 00:00:12,700
+ Iba caminando hasta abajo cuando de repente empezó a llover muy fuerte.
+
+4
+00:00:12,700 --> 00:00:16,000
+ Así que me refugí bajo un árbol esperando que pasara la tormenta.
+
+5
+00:00:16,000 --> 00:00:19,300
+ Y justo entonces recordé que había dejado la venta abierta.
 

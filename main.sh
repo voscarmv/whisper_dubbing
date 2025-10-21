@@ -1,30 +1,32 @@
 #!/bin/bash
 
-espeak -mp 0 -w out.wav -v es-la '
-    <speak>
-    <prosody rate="slow">
-        Hola, ¿cómo estás hoy?
-    </prosody>
-    <break time="1s">
-    
-    <prosody rate="medium">
-        Quería contarte algo interesante que me pasó esta mañana.
-    </prosody>
-    <break time="3s">
-    
-    <prosody rate="fast">
-        Iba caminando al trabajo cuando, de repente, empezó a llover muy fuerte.
-    </prosody>
-    <break time="1s">
-    
-    <prosody rate="slow">
-        Así que me refugié bajo un árbol, esperando que pasara la tormenta.
-    </prosody>
-    <break time="2s">
-    
-    <prosody rate="x-fast">
-        ¡Y justo entonces recordé que había dejado la ventana abierta!
-    </prosody>
-    </speak>
-'
-whisper-cli -m ~/git/whisper.cpp/models/ggml-small.bin -l es -f out.wav -oj
+# espeak -mp 0 -v es-la "`cat example2.ssml`"
+espeak -mp 0 -w out.wav -v es-la "`cat example.ssml`"
+whisper-cli -m ~/git/whisper.cpp/models/ggml-small.bin -l es -f out.wav -oj -osrt
+node index.js > output.csv
+# Make the dubbing fit the SRT durations to later paste them all in sequence
+CTR=0;
+cat output.csv | while IFS='|' read START END DURATION TEXT ; do
+    espeak -mp 0 -w "f$CTR.wav" -v es-la "$TEXT"
+    DUR=`soxi -D "f$CTR.wav"`
+    echo create f$CTR.wav
+    DUR1=`echo "scale=0; ($DUR*1000)/1" | bc`
+    echo wav duarion $DUR1
+    echo compare to SRT $DURATION
+    SCALE=`echo "scale=2;100*($DUR1 / (0.8 * $DURATION))" | bc | sed 's/\..*//'`
+    echo $SCALE
+
+    echo '########'
+
+    espeak -mp 0 -w "f$CTR.wav" -v es-la "<prosody rate=\"$SCALE%\">$TEXT</prosody>"
+    DUR=`soxi -D "f$CTR.wav"`
+    echo create f$CTR.wav
+    DUR1=`echo "scale=0; ($DUR*1000)/1" | bc`
+    echo wav duarion $DUR1
+    echo compare to SRT $DURATION
+    SCALE=`echo "scale=2;100 * $DUR1 / $DURATION" | bc `
+    echo $SCALE
+    ((CTR++))
+
+    echo '-----------------'
+done
