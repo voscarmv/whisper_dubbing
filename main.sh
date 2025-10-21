@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # espeak -mp 0 -v es-la "`cat example2.ssml`"
-espeak -mp 0 -w out.wav -v es-la "`cat example.ssml`"
-whisper-cli -m ~/git/whisper.cpp/models/ggml-small.bin -l es -f out.wav -oj -osrt
+espeak -mp 0 -w out.wav -v en "`cat example3.ssml`"
+whisper-cli -m ~/git/whisper.cpp/models/ggml-medium.bin -l es -f out.wav -oj -osrt
 node index.js > output.csv
 # Make the dubbing fit the SRT durations to later paste them all in sequence
 CTR=0;

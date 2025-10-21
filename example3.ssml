@@ -1,0 +1,21 @@
+<prosody rate="slow">
+  Hello, how are you today?
+</prosody>
+<break time="1s"/>
+
+<prosody rate="medium">
+  I wanted to tell you something interesting that happened to me this morning.
+</prosody>
+<break time="3s"/>
+
+<prosody rate="x-fast">
+  I was walking to work when, suddenly, it started raining heavily.
+</prosody>
+
+<prosody rate="x-fast">
+  So I took shelter under a tree, hoping the storm would pass.
+</prosody>
+
+<prosody rate="x-fast">
+  And right then I remembered that I had left the window open!
+</prosody>

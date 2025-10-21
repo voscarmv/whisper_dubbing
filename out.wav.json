@@ -1,26 +1,26 @@
 {
 	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | OPENMP = 1 | REPACK = 1 | ",
 	"model": {
-		"type": "small",
+		"type": "medium",
 		"multilingual": true,
 		"vocab": 51865,
 		"audio": {
 			"ctx": 1500,
-			"state": 768,
-			"head": 12,
-			"layer": 12
+			"state": 1024,
+			"head": 16,
+			"layer": 24
 		},
 		"text": {
 			"ctx": 448,
-			"state": 768,
-			"head": 12,
-			"layer": 12
+			"state": 1024,
+			"head": 16,
+			"layer": 24
 		},
 		"mels": 80,
 		"ftype": 1
 	},
 	"params": {
-		"model": "/home/oscar/git/whisper.cpp/models/ggml-small.bin",
+		"model": "/home/oscar/git/whisper.cpp/models/ggml-medium.bin",
 		"language": "es",
 		"translate": false
 	},
@@ -31,57 +31,57 @@
 		{
 			"timestamps": {
 				"from": "00:00:00,000",
-				"to": "00:00:02,000"
+				"to": "00:00:01,900"
 			},
 			"offsets": {
 				"from": 0,
-				"to": 2000
+				"to": 1900
 			},
-			"text": " Hola. ¿Cómo estás hoy?"
+			"text": " ¡Hola! ¿Cómo estás hoy?"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:02,000",
-				"to": "00:00:06,500"
+				"from": "00:00:01,900",
+				"to": "00:00:06,700"
 			},
 			"offsets": {
-				"from": 2000,
-				"to": 6500
+				"from": 1900,
+				"to": 6700
 			},
-			"text": " Quería contarte algo interesante que me pasó esta mañana."
+			"text": " Quisiera decirte algo interesante que sucedió a mí esta mañana."
 		},
 		{
 			"timestamps": {
-				"from": "00:00:06,500",
-				"to": "00:00:12,700"
+				"from": "00:00:06,700",
+				"to": "00:00:12,020"
 			},
 			"offsets": {
-				"from": 6500,
-				"to": 12700
+				"from": 6700,
+				"to": 12020
 			},
-			"text": " Iba caminando hasta abajo cuando de repente empezó a llover muy fuerte."
+			"text": " Estaba caminando a trabajo cuando de repente empezó a llover muy fuerte."
 		},
 		{
 			"timestamps": {
-				"from": "00:00:12,700",
-				"to": "00:00:16,000"
+				"from": "00:00:12,020",
+				"to": "00:00:14,760"
 			},
 			"offsets": {
-				"from": 12700,
-				"to": 16000
+				"from": 12020,
+				"to": 14760
 			},
-			"text": " Así que me refugí bajo un árbol esperando que pasara la tormenta."
+			"text": " Así que tomé un shelter bajo un árbol, esperando que el estómago pasara."
 		},
 		{
 			"timestamps": {
-				"from": "00:00:16,000",
-				"to": "00:00:19,300"
+				"from": "00:00:14,760",
+				"to": "00:00:17,380"
 			},
 			"offsets": {
-				"from": 16000,
-				"to": 19300
+				"from": 14760,
+				"to": 17380
 			},
-			"text": " Y justo entonces recordé que había dejado la venta abierta."
+			"text": " Y en ese momento recordé que había dejado la puerta abierta."
 		}
 	]
 }

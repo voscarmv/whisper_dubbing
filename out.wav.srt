@@ -1,20 +1,20 @@
 1
-00:00:00,000 --> 00:00:02,000
- Hola. ¿Cómo estás hoy?
+00:00:00,000 --> 00:00:01,900
+ ¡Hola! ¿Cómo estás hoy?
 
 2
-00:00:02,000 --> 00:00:06,500
- Quería contarte algo interesante que me pasó esta mañana.
+00:00:01,900 --> 00:00:06,700
+ Quisiera decirte algo interesante que sucedió a mí esta mañana.
 
 3
-00:00:06,500 --> 00:00:12,700
- Iba caminando hasta abajo cuando de repente empezó a llover muy fuerte.
+00:00:06,700 --> 00:00:12,020
+ Estaba caminando a trabajo cuando de repente empezó a llover muy fuerte.
 
 4
-00:00:12,700 --> 00:00:16,000
- Así que me refugí bajo un árbol esperando que pasara la tormenta.
+00:00:12,020 --> 00:00:14,760
+ Así que tomé un shelter bajo un árbol, esperando que el estómago pasara.
 
 5
-00:00:16,000 --> 00:00:19,300
- Y justo entonces recordé que había dejado la venta abierta.
+00:00:14,760 --> 00:00:17,380
+ Y en ese momento recordé que había dejado la puerta abierta.
 
